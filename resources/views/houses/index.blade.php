@@ -1,3 +1,6 @@
+<head>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
 @extends('houses.layout')
 
 @section('content')

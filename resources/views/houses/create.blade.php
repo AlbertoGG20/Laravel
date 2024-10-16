@@ -1,3 +1,6 @@
+<head>
+  <link rel="stylesheet" href="/css/create.css">
+</head>
 
 @extends('houses.layout')
 
