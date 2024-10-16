@@ -2,22 +2,17 @@
   
 @section('content')
 
-<div class="card mt-5">
-  <h2 class="card-header">Show house</h2>
-  <div class="card-body">
+  <h2 class="card-header">Casa</h2>
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <a class="btn btn-primary btn-sm" href="{{ route('houses.index') }}"><i class="fa fa-arrow-left"></i> Back</a>
-    </div>
-
+  
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="">
             <div class="form-group">
                 <strong>Name:</strong> <br/>
                 {{ $house->name }}
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+        <div class="">
             <div class="form-group">
                 <strong>Details:</strong> <br/>
                 {{ $house->detail }}
@@ -25,6 +20,4 @@
         </div>
     </div>
 
-  </div>
-</div>
 @endsection

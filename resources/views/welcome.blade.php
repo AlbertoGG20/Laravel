@@ -17,13 +17,13 @@
       </div>
       <div class="card-houses__container">
         @foreach ($houses as $house)
-        <div class="card-house">
+        <a href="{{ route('houses.show',$house->id)}}" class="card-house">
           <h3>{{ $house->address }}</h3>
           <div class="card-houses__info">
             <p>{{ $house->city }}</p>
             <p>{{ $house->meters}}</p>
           </div>
-        </div>
+        </a>
         @endforeach
       </div>
     </body>
