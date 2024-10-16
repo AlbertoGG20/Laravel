@@ -2,7 +2,7 @@
   
 @section('content')
 
-  <h2 class="card-header">Casa</h2>
+  <h2 class="card-header">Casas</h2>
 
   
     <div class="row">
