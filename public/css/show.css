@@ -1,0 +1,34 @@
+body{}
+
+main{
+  padding: 0 2rem;
+}
+
+.house__img{
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+h1{
+  text-align: center;
+}
+
+span{
+  color: rgb(78, 112, 138);
+}
+.house__address{
+  margin-top:2rem ;
+  text-align: center;
+}
+
+.house__info{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  &>p{
+    margin: 0;
+    border: 1px solid #215190;
+     border-radius: 0.25rem;
+    padding: 1rem 2rem;
+  }
+}

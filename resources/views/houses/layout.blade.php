@@ -18,5 +18,7 @@
     <div class="container">
       @yield('content')
     </div>
+    <script src="https://kit.fontawesome.com/961dcfe579.js" crossorigin="anonymous"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

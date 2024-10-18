@@ -6,13 +6,12 @@
 
 @section('content')
 {{-- REVISAR LA PARTE DE ARRIBA --}}
-<div class="card mt-5">
-  <h2 class="card-header">Edit Product</h2>
-  <div class="card-body">
+<div class="edit ">
+  <h2 class="edit-header">Editar la casa</h2>
+  <div class="edit-body">
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <a class="btn btn-primary btn-sm" href="{{ route('houses.index') }}"><i class="fa fa-arrow-left"></i> Back</a>
-    </div>
+
+        <a class="btn btn--back" href="{{ route('houses.index') }}"><i class="fa fa-arrow-left"></i> Volver</a>
 
     <form class=" form" action="{{ route('houses.update',$house->id) }}" method="POST">
         @csrf
@@ -45,7 +44,7 @@
   </div>
 </div>
 
-        <button type="submit" class="form__btn form__btn--update">Actualizar</button>
+        <button type="submit" class="btn form__btn--update">Actualizar</button>
     </form>
 
   </div>

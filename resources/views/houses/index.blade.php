@@ -32,11 +32,12 @@
               @csrf
               @method('DELETE')
 
-              <button type="submit" class="btn btn btn--delete">Eliminar</button>
+              <button  type="submit" class="btn btn--delete">Eliminar</button>
             </form>
             </td>
 
           </tr>
+
         @endforeach
       </tbody>
     </table>

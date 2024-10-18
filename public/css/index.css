@@ -23,35 +23,44 @@ thead{
 
 
 th,td{
-  padding: 1rem 2rem;
+  padding: 1rem 0.2rem 0.7rem 1rem;
   text-align: left;
   border-bottom: solid 1px #37699a62;
+  font-size: 0.8rem;
 }
 
 .table__buttons{
-  display: flex;
-  gap: 1rem;
+  padding: 0;
+  height: 120px;
 }
 
-.table__buttons button{
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
+.table__buttons >  form{
+  display: inline-block;
+  margin:auto auto;
 }
+
+
 
 
 .table__buttons .btn--edit{
   background-color: #ffc574;
+  &:hover{
+    background-color: #fcce8e;
+    color: #5b5b5b;
+  }
 }
 
 .table__buttons .btn--delete{
   background-color: #ff817d;
+  margin: 16px 0;
+  cursor: pointer;
+  &:hover{
+    background-color: #fe9a96;
+    color: #515151;
+  }
 }
 
 
 
-.form__btn--update{
-  background-color: #ffc574;
-}
+
 

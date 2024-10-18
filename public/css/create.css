@@ -72,6 +72,8 @@
   padding: 0.5rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  outline-color:#2971cf86;
+  outline-offset: 1px
 }
 
 .form__btn{
@@ -88,4 +90,8 @@
 
 .form__btn--submit{
   background-color: #8bd4ff;
+  &:hover{
+    background-color: #9ddafe;
+    color: #515151;
+  }
 }

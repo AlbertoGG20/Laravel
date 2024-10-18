@@ -1,8 +1,19 @@
+h2{
+  text-align: center;
+}
+
+.edit-body{
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  height: 400px;
+}
+
 
 .form{
   padding:1.7rem 1rem;
   max-width:600px ;
-  margin: 0 auto;
+  margin: 18px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +22,7 @@
   background-color: #dbdbdbf6;
   color: #242424;
   border-radius: 0.25rem;
-  border: solid 1px #d6d6d6;
+  border: solid 1px #dbdbdbf6;
   box-shadow: 0 0 10px rgba(205, 205, 205, 0.437);
 }
 
@@ -49,4 +60,26 @@
   padding: 0.5rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  outline-color:#2971cf86;
+  outline-offset: 1px
+}
+
+.form__btn--update{
+  margin-top: 1rem;
+  background-color: #ffc574;
+  align-self: flex-end;
+  cursor: pointer;
+  &:hover{
+    background-color: #f8cc8e;
+    color: #515151;
+  }
+}
+
+.btn--back{
+  box-sizing: border-box;
+  background-color:#ced4da ;
+  &:hover{
+    background-color:#d2d6da ;
+    color: #6f6f6f;
+  }
 }

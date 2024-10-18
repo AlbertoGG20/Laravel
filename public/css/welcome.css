@@ -6,6 +6,10 @@ h1, h1 + p{
   padding: 0;
 }
 
+h1 + p{
+  font-size: 1.4rem;
+}
+
 .home__hero{
   font-size: 1.8rem;
   width: 100%;
@@ -23,33 +27,52 @@ h1, h1 + p{
 }
 
 .card-houses__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, 288px);
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-
+  justify-content: center;
 }
 
 .card-house{
-  width: 200px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  width: 288px;
+  height: 174px;
   display: flex;
   flex-direction: column;
   background-color: #f4f7fb;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
   border: 1px solid #dcdcdc;
   box-shadow: 0 0 15px rgba(14, 50, 107, 0.33);
+  transition: background-color 350ms ease-in-out ;
+  &:hover{
+    background-color: #79c1ff26;
+  }
+}
 
+.card-house>h3{
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .card-houses__info{
   font-size: 0.9rem;
+  text-transform: capitalize;
   &> p:last-child{
     font-size: 0.8rem;
+    color: #6d6f71;
+
     &::after {
       content: " Metros";
     }
   }
+}
+
+.fa-link{
+  align-self: flex-end;
+  color: #2a70a28f;
 }

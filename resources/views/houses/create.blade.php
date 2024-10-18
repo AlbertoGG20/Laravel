@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="hero">
-      <h1>Create a new house</h1>
+      <h1>Agregar una casa</h1>
     </div>
 
     <form class="form form--create" method="POST" action="{{ route('houses.store')}}">

@@ -1,23 +1,30 @@
+<head>
+  <link rel="stylesheet" href="/css/show.css">
+</head>
+
 @extends('houses.layout')
+
   
 @section('content')
 
-  <h2 class="card-header">Casas</h2>
+<main>
+  <h1 class="card-header">Información sobre las casas </h1>
+  <div class="house">
+    <img class="house__img" src="/img/houses/house1.jpg" alt="">
+    <p class="house__address"> <i class="fa-solid fa-location-dot"></i> {{ $house->address }}, <span> {{ $house->city }}</span> </p>
+    <div class="house__info">
 
-  
-    <div class="row">
-        <div class="">
-            <div class="form-group">
-                <strong>Name:</strong> <br/>
-                {{ $house->name }}
-            </div>
-        </div>
-        <div class="">
-            <div class="form-group">
-                <strong>Details:</strong> <br/>
-                {{ $house->detail }}
-            </div>
-        </div>
+      <p><i class="fa-solid fa-ruler-combined"></i> {{ $house->meters}}</p>
+      
+      <p><i class="fa-solid fa-bed"></i> {{ $house->rooms}}</p>
+      
+      <p><i class="fa-solid fa-bath"></i> {{ $house->bathrooms}}</p>
+    
     </div>
+  </div>
+
+  </main>
+
+
 
 @endsection
